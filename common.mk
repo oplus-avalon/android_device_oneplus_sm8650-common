@@ -223,10 +223,14 @@ PRODUCT_PACKAGES += \
     IPACM_Filter_cfg.xml
 endif
 
-# IR
+# IR / HeyMelody
 ifneq ($(TARGET_IS_TABLET),true)
 PRODUCT_PACKAGES += \
     android.hardware.ir-service.oplus
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/oplus-hiddenapi-package-allowlist.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/oplus-hiddenapi-package-allowlist.xml \
+    $(LOCAL_PATH)/configs/permissions/default-permissions-oplus-melody.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/default-permissions/default-permissions-oplus-melody.xml
 
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.consumerir.xml:$(TARGET_COPY_OUT_ODM)/etc/permissions/android.hardware.consumerir.xml
