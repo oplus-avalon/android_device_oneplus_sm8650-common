@@ -439,6 +439,9 @@ vendor/lib64/libqconfigclient.so
 vendor/lib64/qti.video.utils.videobufferlayout.so
 vendor/lib64/vendor.qti.hardware.qconfig-V1-ndk.so
 
+# Melody (OP Buds / Wireless Earphones)
+my_stock/app/Melody/Melody.apk:product/app/Melody/Melody.apk;PRESIGNED
+
 # MMI
 vendor/bin/hw/vendor.qti.hardware.factory-service
 vendor/bin/hw/vendor.qti.hardware.factory@1.0-service
